@@ -1,0 +1,47 @@
+/* pages/home/home.wxss */
+.nav-1 {
+    width: 100%;
+    height: 80rpx;
+    background: #70c1b3;
+}
+
+.grade {
+    display: inline-block;
+    box-sizing: border-box;
+    width: calc(100% / 3);
+    height: 80rpx;
+    font-size: 15px;
+    text-align: center;
+    line-height: 80rpx;
+    color: #000; 
+}
+
+.grade-active {
+     border-bottom: 8rpx solid #247ba0; 
+     font-weight: bold;
+     color: #247ba0;
+}
+
+.nav-2 {
+    box-sizing: border-box;
+    padding: 18rpx 0;
+    width: 100%;
+    height: 150rpx;
+    background: #b2dbbf;
+}
+
+.course {
+    display: inline-block;
+    border-radius: 10rpx;
+    width: 20%;
+    height: 57rpx;
+    font-size: 15px;
+    text-align: center;
+    line-height: 57rpx;
+    color: #fff;
+}
+
+.course-active {
+    background: #247ba0;
+}
+

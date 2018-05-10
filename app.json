@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#70c1b3",
+    "navigationBarTitleText": "最高中",
+    "navigationBarTextStyle":"white"
+  },
+    "tabBar": {
+        "color": "#8a8a8a",
+        "selectedColor": "#247ba0",
+        "backgroundColor": "#fff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "课堂问题",
+                "iconPath": "images/home/quest_no.png",
+                "selectedIconPath": "images/home/quest_yes.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "笔记圈",
+                "iconPath": "images/home/note_no.png",
+                "selectedIconPath": "images/home/note_yes.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "题库",
+                "iconPath": "images/home/test_no.png",
+                "selectedIconPath": "images/home/test_yes.png"
+            },
+            {
+                "pagePath": "pages/logs/logs",
+                "text": "我的",
+                "iconPath": "images/home/my_no.png",
+                "selectedIconPath": "images/home/my_yes.png"
+            }
+        ]
+    }
+}

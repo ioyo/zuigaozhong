@@ -1,0 +1,8 @@
+<view class="main">
+    <view class="nav-1">
+        <view wx:for="{{gradeList}}" class="grade {{curGrade == item.index ? 'grade-active' : ''}}" data-grade="{{item.index}}" bindtap='clickGrade'>{{item.grade}}</view>
+    </view>
+    <view class='nav-2'>
+        <view wx:for="{{courseList}}" class="course {{curCourse == item.index ? 'course-active' : ''}}" data-course="{{item.index}}" bindtap='clickCourse'>{{item.course}}</view>
+    </view>
+</view>
