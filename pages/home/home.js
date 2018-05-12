@@ -1,14 +1,19 @@
 // pages/home/home.js
+var user = require('../data/user_table.js');
+var question = require('../data/ques_table.js');
+var comment = require('../data/comm_table.js');
+
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        curGrade: 1,
-        curCourse: 1,
-        gradeList: [],
-        courseList: []
+        grade: ["高一", "高二", "高三"],
+        subject: ["全部", "语文", "数学", "英语", "化学", "物理", "生物", "历史", "政治", "地理"],
+        quesList: [],
+        commList: []
+
     },
 
     /**
@@ -16,29 +21,25 @@ Page({
      */
     onLoad: function (options) {
         var that = this;
-        var gradeList = [{ grade: "高一", index: 1 }, { grade: "高二", index: 2 }, { grade: "高三", index: 3 }];
-        var courseList = [{ course: "全部", index: 1 }, { course: "语文", index: 2 }, { course: "数学", index: 3 }, { course: "英语", index: 4 }, { course: "物理", index: 5 }, { course: "化学", index: 6 }, { course: "生物", index: 7 }, { course: "历史", index: 8 }, { course: "政治", index: 9 }, { course: "地理", index: 10 }];
-        that.setData({
-            gradeList: gradeList,
-            courseList: courseList
-        })
-
-    },
-
-    clickGrade: function (e) {
-        var that = this;
-        var curGrade = e.currentTarget.dataset.grade;
-            that.setData({
-                curGrade: curGrade
+        var quesList = question.ques_data;
+        var commList = comment.comm_data;
+        quesList.forEach(function (item) {
+            let list = [];
+            commList.forEach(function (citem) {
+                if (item.qId == citem.qId) {
+                    list.push(citem);
+                    item.comments = list;
+                } else {
+                    console.log("no comment");
+                }
             })
-    },
-
-    clickCourse: function (e) {
-        var that = this;
-        var curCourse = e.currentTarget.dataset.course;
-        that.setData({
-            curCourse: curCourse
         })
+        that.setData({
+            quesList: quesList,
+            commList: commList
+        })
+        console.log(quesList);
+        console.log(commList);
     },
 
 

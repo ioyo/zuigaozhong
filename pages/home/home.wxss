@@ -1,47 +1,130 @@
 /* pages/home/home.wxss */
-.nav-1 {
-    width: 100%;
-    height: 80rpx;
-    background: #70c1b3;
+
+.grade-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 60rpx;
 }
 
 .grade {
-    display: inline-block;
-    box-sizing: border-box;
-    width: calc(100% / 3);
-    height: 80rpx;
-    font-size: 15px;
+    width: 150rpx;
     text-align: center;
-    line-height: 80rpx;
-    color: #000; 
+    font-size: 14px;
+    color: #999;
 }
 
-.grade-active {
-     border-bottom: 8rpx solid #247ba0; 
-     font-weight: bold;
-     color: #247ba0;
+.search {
+    margin: 0 auto;
+    margin-top: 20rpx;
+    border-radius: 40rpx;
+    width: 650rpx;
+    height: 70rpx;
+    background: #f5f5f5;
 }
 
-.nav-2 {
+.content {
+    margin-top: 20rpx;
     box-sizing: border-box;
-    padding: 18rpx 0;
-    width: 100%;
-    height: 150rpx;
-    background: #b2dbbf;
+    border-top: 2rpx solid #ddd;
+    width: 100vw;
+    /*下面的科目要左右滑动的话必须加这个  */
+    overflow: hidden;
+    white-space: nowrap;
 }
 
-.course {
+.subject-nav {
+    box-sizing: border-box;
+    padding: 0 15rpx;
+    width: 100vw;
+    height: 100rpx;
+    line-height: 100rpx;
+}
+
+.subject {
     display: inline-block;
+    width: 100rpx;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.question-con {
+    box-sizing: border-box;
+    padding: 10rpx 0 20rpx;
+    width: 100vw;
+    height: calc(100vh - 272rpx);
+    background: #f5f8fa;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.question {
+    margin: 0 auto;
+    margin-top: 20rpx;
+    box-sizing: border-box;
+    padding: 0 20rpx;
+    padding-bottom: 20rpx;
     border-radius: 10rpx;
-    width: 20%;
-    height: 57rpx;
-    font-size: 15px;
-    text-align: center;
-    line-height: 57rpx;
-    color: #fff;
+    width: 700rpx;
+    /* height: 500rpx; */
+    background: #fff;
 }
 
-.course-active {
-    background: #247ba0;
+.ques-user {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120rpx;
 }
 
+.q-user-var {
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 50%;
+}
+
+.q-user-name {
+    margin-left: 20rpx;
+    width: 600rpx;
+    font-size: 13px;
+    color: #666;
+}
+
+.close {
+    width: 30rpx;
+    height: 30rpx;
+    transform: translateY(-25rpx);
+}
+
+.quse-desc {
+    display: block;
+    white-space: pre-line;
+    font-size: 14px;
+    color: #000;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.ques-img {
+    display: block;
+    margin-top: 20rpx;
+    width: 600rpx;
+}
+
+.comment {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    margin-top: 20rpx;
+    padding-right: 130rpx;
+}
+
+.comm-img {
+    width: 35rpx;
+    height: 35rpx;
+}

@@ -1,4 +1,0 @@
-<!--pages/test/test.wxml-->
-<swiper class='s'>
-    <swiper-item></swiper-item>
-</swiper>

@@ -1,5 +1,4 @@
-data: {
-    [
+var data = [
         {
             nId: 11,
             uId: 1111,
@@ -53,4 +52,7 @@ data: {
             ]
         },
     ]
+
+module.exports = {
+    note_data: data
 }

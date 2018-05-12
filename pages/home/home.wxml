@@ -1,8 +1,26 @@
 <view class="main">
-    <view class="nav-1">
-        <view wx:for="{{gradeList}}" class="grade {{curGrade == item.index ? 'grade-active' : ''}}" data-grade="{{item.index}}" bindtap='clickGrade'>{{item.grade}}</view>
+    <view class='grade-nav'>
+        <view class='grade' wx:for="{{grade}}" wx:key="index">{{item}}</view>
     </view>
-    <view class='nav-2'>
-        <view wx:for="{{courseList}}" class="course {{curCourse == item.index ? 'course-active' : ''}}" data-course="{{item.index}}" bindtap='clickCourse'>{{item.course}}</view>
+    <input class='search' />
+    <view class='content'>
+        <scroll-view class='subject-nav' scroll-x>
+            <view class='subject' wx:for="{{subject}}" wx:key="index">{{item}}</view>
+        </scroll-view>
+        <scroll-view class='question-con' scroll-y>
+            <view class='question' wx:for="{{quesList}}" wx:key="index">
+                <view class='ques-user'>
+                    <image class='q-user-var' src="{{item.uVar}}"></image>
+                    <text class='q-user-name'>{{item.uName}}</text>
+                    <image class='close' src='../../images/home/close.png'></image>
+                </view>
+                <view class='quse-desc'>{{item.question}}</view>
+                <image class='ques-img' src="{{item.q_img}}" mode='widthFix'></image>
+                <view class='comment'>
+                    <image class='comm-img' src='../../images/home/comments.png'></image>
+                    <text>{{}}</text>
+                </view>
+            </view>
+        </scroll-view>
     </view>
 </view>
