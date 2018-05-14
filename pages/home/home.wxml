@@ -1,16 +1,21 @@
 <view class="main">
     <view class='grade-nav'>
-        <view class='grade' wx:for="{{grade}}" wx:key="index">{{item}}</view>
+        <view class="grade {{curGrade == item ? 'checkedG' : ''}}" wx:for="{{grade}}" wx:key="index" bindtap='chooseG' data-gra="{{item}}">{{item}}</view>
     </view>
-    <input class='search' />
+    <view class='search-write'>
+        <image src='../../images/home/edit.png'></image>
+        <text>发表问题</text>
+    </view>
     <view class='content'>
         <scroll-view class='subject-nav' scroll-x>
-            <view class='subject' wx:for="{{subject}}" wx:key="index">{{item}}</view>
+            <view class="subject {{curSubject == item ? 'checkedS' : ''}}" wx:for="{{subject}}" wx:key="index" bindtap='chooseS' data-sub="{{item}}">{{item}}</view>
         </scroll-view>
         <scroll-view class='question-con' scroll-y>
             <view class='question' wx:for="{{quesList}}" wx:key="index">
                 <view class='ques-user'>
-                    <image class='q-user-var' src="{{item.uVar}}"></image>
+                    <view class='q-user-var'>
+                        <image src="{{item.uVar}}"></image>
+                    </view>
                     <text class='q-user-name'>{{item.uName}}</text>
                     <image class='close' src='../../images/home/close.png'></image>
                 </view>
@@ -18,7 +23,7 @@
                 <image class='ques-img' src="{{item.q_img}}" mode='widthFix'></image>
                 <view class='comment'>
                     <image class='comm-img' src='../../images/home/comments.png'></image>
-                    <text>{{}}</text>
+                    <text class='comm-count'>{{item.allCount}}</text>
                 </view>
             </view>
         </scroll-view>

@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/home/home",
+    "pages/note/note",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -23,20 +24,14 @@
                 "selectedIconPath": "images/home/quest_yes.png"
             },
             {
-                "pagePath": "pages/index/index",
+                "pagePath": "pages/note/note",
                 "text": "笔记圈",
                 "iconPath": "images/home/note_no.png",
                 "selectedIconPath": "images/home/note_yes.png"
             },
             {
                 "pagePath": "pages/logs/logs",
-                "text": "题库",
-                "iconPath": "images/home/test_no.png",
-                "selectedIconPath": "images/home/test_yes.png"
-            },
-            {
-                "pagePath": "pages/logs/logs",
-                "text": "我的",
+                "text": "个人中心",
                 "iconPath": "images/home/my_no.png",
                 "selectedIconPath": "images/home/my_yes.png"
             }

@@ -1,0 +1,16 @@
+<!--pages/note/note.wxml-->
+<view class='main'>
+    <view class='top'>
+        <text>推荐</text>
+        <text>|</text>
+        <text>热门</text>
+    </view>
+    <view class='content'>
+        <scroll-view class='note-con' scroll-y>
+            <view class='note' wx:for="{{noteList}}" wx:key="index">
+                <view class='title'>{{item.title}}</view>
+                <view></view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

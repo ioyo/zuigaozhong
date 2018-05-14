@@ -12,7 +12,9 @@ Page({
         grade: ["高一", "高二", "高三"],
         subject: ["全部", "语文", "数学", "英语", "化学", "物理", "生物", "历史", "政治", "地理"],
         quesList: [],
-        commList: []
+        commList: [],
+        curGrade: '高一',
+        curSubject: '全部'
 
     },
 
@@ -34,12 +36,38 @@ Page({
                 }
             })
         })
+        for (var i = 0; i < quesList.length; i++) {
+            if (quesList[i].comments) {
+                quesList[i].allCount = quesList[i].comments.length;
+            } else {
+                quesList[i].allCount = 0;
+            }
+
+        }
         that.setData({
             quesList: quesList,
             commList: commList
         })
-        console.log(quesList);
         console.log(commList);
+        console.log(quesList);
+    },
+
+    // 选择年级
+    chooseG: function (e) { 
+        var that = this;
+        var curGrade = e.currentTarget.dataset.gra;
+        that.setData({
+            curGrade: curGrade
+        })
+    },
+
+    // 选择科目
+    chooseS: function (e) {
+        var that = this;
+        var curSubject = e.currentTarget.dataset.sub;
+        that.setData({
+            curSubject: curSubject
+        })
     },
 
 
