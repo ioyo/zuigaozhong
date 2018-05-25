@@ -1,0 +1,58 @@
+/* pages/mine/mine.wxss */
+.top {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 300rpx;
+    background: linear-gradient(to bottom,#fff,#E29587);
+}
+
+.top image {
+    width: 130rpx;
+    height: 130rpx;
+    border-radius: 50%;
+    box-shadow: 0rpx 5rpx 5rpx 5rpx rgba(0, 0, 0, 0.2);
+}
+
+.top text {
+    margin-top: 20rpx;
+    font-size: 14px;
+    color: white;
+}
+
+.bottom {
+    box-sizing: border-box;
+    padding: 30rpx 0;
+    width: 100vw;
+    height: calc(100vh - 300rpx);
+    background: #f5f8fa;
+}
+
+.item {
+    display: flex;
+    position: relative;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 40rpx;
+    margin-top: 6rpx;
+    width: 100vw;
+    height: 80rpx;
+    font-size: 15px;
+    color: #666;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.item image {
+    margin-right: 18rpx;
+    width: 35rpx;
+    height: 35rpx;
+}
+
+.item text {
+    position: absolute;
+    right: 40rpx;
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,17 @@
+<!--pages/mine/mine.wxml-->
+<view class='top'>
+    <image src="{{uvar}}"></image>
+    <text>{{uname}}</text>
+</view>
+<view class='bottom'>
+    <view class='item'>
+        <image src='../../images/mine/question.png'></image>发布的问题<text>＞</text></view>
+    <view class='item'>
+        <image src='../../images/mine/note.png'></image>发布的笔记<text>＞</text></view>
+    <view class='item'>
+        <image src='../../images/mine/like.png'></image>赞过的笔记<text>＞</text></view>
+    <view class='item'>
+        <image src='../../images/mine/comment.png'></image>我的评论<text>＞</text></view>
+    <view class='item'>
+        <image src='../../images/mine/back.png'></image>意见反馈<text>＞</text></view>
+</view>

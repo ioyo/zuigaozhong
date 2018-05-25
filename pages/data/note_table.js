@@ -2,27 +2,23 @@ var data = [
         {
             nId: 11,
             uId: 1111,
-            subject: "语文",
+            subject: "语文一年级",
             grade: "高一",
-            title: "雷雨",
+            title: "语文一点都不难",
             like: 23425,
             note_img: [
-                "../../sfgfg.png",
-                "../../asdferf.png",
-                "../../asawawrf.png"
+                "../../images/note/note1.jpg",
             ]
         },
         {
             nId: 22,
             uId: 2222,
-            subject: "数学",
+            subject: "英语",
             grade: "高一",
-            title: "三角函数",
+            title: "高一英语，定语从句",
             like: 25,
             note_img: [
-                "../../sfgfg.png",
-                "../../asdferf.png",
-                "../../asawawrf.png"
+                "../../images/note/note2.jpg"
             ]
         },
         {
@@ -33,9 +29,7 @@ var data = [
             title: "阿基米德定律",
             like: 5,
             note_img: [
-                "../../sfgfg.png",
-                "../../asdferf.png",
-                "../../asawawrf.png"
+                "../../images/note/note3.jpg"
             ]
         },
         {
@@ -46,9 +40,7 @@ var data = [
             title: "元素周期表",
             like: 235,
             note_img: [
-                "../../sfgfg.png",
-                "../../asdferf.png",
-                "../../asawawrf.png"
+                "../../images/note/note4.jpg"
             ]
         },
     ]

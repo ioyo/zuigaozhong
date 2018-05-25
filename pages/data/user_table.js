@@ -1,23 +1,23 @@
 var data = [
     {
         uId: 1111,
-        uName: "这是我名字",
-        uVar: "../../dfgfgfd.png"
+        uName: "风萧萧",
+        uVar: "../../images/user/user-1.jpeg"
     },
     {
         uId: 2222,
-        uName: "这是我名字",
-        uVar: "../../dfgfgfd.png"
+        uName: "立晓",
+        uVar: "../../images/user/user-2.jpeg"
     },
     {
         uId: 3333,
-        uName: "这是我名字",
-        uVar: "../../dfgfgfd.png"
+        uName: "U_fussd",
+        uVar: "../../images/user/user-3.jpeg"
     },
     {
         uId: 4444,
-        uName: "这是我名字",
-        uVar: "../../dfgfgfd.png"
+        uName: "cooKs",
+        uVar: "../../images/user/user-4.jpeg"
     }
 ]
 

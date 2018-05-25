@@ -1,13 +1,14 @@
 // pages/note/note.js
 var note = require('../data/note_table.js');
+var user = require('../data/user_table.js');
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        noteList: []
-
+        noteList: [],
+        userList: []
     },
 
     /**
@@ -16,9 +17,12 @@ Page({
     onLoad: function (options) {
         var that = this;
         var noteList = note.note_data;
+        var userList = user.user_data;
         console.log(noteList);
+        console.log(userList);
         that.setData({
-            noteList: noteList
+            noteList: noteList,
+            userList: userList
         })
 
     },

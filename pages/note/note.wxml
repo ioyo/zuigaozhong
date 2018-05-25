@@ -6,11 +6,80 @@
         <text>热门</text>
     </view>
     <view class='content'>
-        <scroll-view class='note-con' scroll-y>
-            <view class='note' wx:for="{{noteList}}" wx:key="index">
-                <view class='title'>{{item.title}}</view>
-                <view></view>
+        <view class='left'>
+            <view class='left-item item'>
+                <image class='pic' src="{{noteList[0].note_img[0]}}" mode='widthFix'></image>
+                <view class='title'>{{noteList[0].title}}</view>
+                <view class='user'>
+                    <view class='info'>
+                        <image src="{{userList[0].uVar}}"></image>
+                        <text>{{userList[0].uName}}</text>
+                    </view>
+                    <view class='like'>
+                        <image src='../../images/note/like.png'></image>
+                        <text>21</text>
+                    </view>
+                </view>
             </view>
-        </scroll-view>
+            <view class='left-item item'>
+                <image class='pic' src="{{noteList[2].note_img[0]}}" mode='widthFix'></image>
+                <view class='title'>{{noteList[2].title}}</view>
+                <view class='user'>
+                    <view class='info'>
+                        <image src="{{userList[2].uVar}}"></image>
+                        <text>{{userList[2].uName}}</text>
+                    </view>
+                    <view class='like'>
+                        <image src='../../images/note/like.png'></image>
+                        <text>4</text>
+                    </view>
+                </view>
+            </view>
+            <view class='left-item item'>
+                <image class='pic' src="{{noteList[4].note_img[0]}}" mode='widthFix'></image>
+                <view class='title'>{{noteList[4].title}}</view>
+                <view class='user'>
+                    <view class='info'>
+                        <image src="{{userList[4].uVar}}"></image>
+                        <text>{{userList[4].uName}}</text>
+                    </view>
+                    <view class='like'>
+                        <image src='../../images/note/like.png'></image>
+                        <text>67</text>
+                    </view>
+                </view>
+            </view>
+
+        </view>
+        <view class='right'>
+            <view class='right-item item'>
+                <image class='pic' src="{{noteList[1].note_img[0]}}" mode='widthFix'></image>
+                <view class='title'>{{noteList[1].title}}</view>
+                <view class='user'>
+                    <view class='info'>
+                        <image src="{{userList[1].uVar}}"></image>
+                        <text>{{userList[1].uName}}</text>
+                    </view>
+                    <view class='like'>
+                        <image src='../../images/note/like.png'></image>
+                        <text>9</text>
+                    </view>
+                </view>
+            </view>
+            <view class='right-item item'>
+                <image class='pic' src="{{noteList[3].note_img[0]}}" mode='widthFix'></image>
+                <view class='title'>{{noteList[3].title}}</view>
+                <view class='user'>
+                    <view class='info'>
+                        <image src="{{userList[3].uVar}}"></image>
+                        <text>{{userList[3].uName}}</text>
+                    </view>
+                    <view class='like'>
+                        <image src='../../images/note/like.png'></image>
+                        <text>141</text>
+                    </view>
+                </view>
+            </view>
+        </view>
     </view>
 </view>

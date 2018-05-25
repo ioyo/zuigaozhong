@@ -1,25 +1,27 @@
 {
-  "pages":[
-    "pages/home/home",
-    "pages/note/note",
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "white",
-    "navigationBarTitleText": "最高中",
-    "navigationBarTextStyle":"black"
-  },
+    "pages": [
+        "pages/home/home",
+        "pages/choose/choose",
+        "pages/note/note",
+        "pages/index/index",
+        "pages/logs/logs",
+        "pages/mine/mine"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "white",
+        "navigationBarTitleText": "最高中",
+        "navigationBarTextStyle": "black"
+    },
     "tabBar": {
         "color": "#8a8a8a",
-        "selectedColor": "#247ba0",
+        "selectedColor": "#ff2741",
         "backgroundColor": "#fff",
         "borderStyle": "white",
         "list": [
             {
                 "pagePath": "pages/home/home",
-                "text": "课堂问题",
+                "text": "问答",
                 "iconPath": "images/home/quest_no.png",
                 "selectedIconPath": "images/home/quest_yes.png"
             },
@@ -30,7 +32,7 @@
                 "selectedIconPath": "images/home/note_yes.png"
             },
             {
-                "pagePath": "pages/logs/logs",
+                "pagePath": "pages/mine/mine",
                 "text": "个人中心",
                 "iconPath": "images/home/my_no.png",
                 "selectedIconPath": "images/home/my_yes.png"

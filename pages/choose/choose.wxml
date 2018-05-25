@@ -1,0 +1,8 @@
+<!--pages/choose/choose.wxml-->
+<view class='main'>
+    <view>欢迎来到最高中，请选择您的身份</view>
+    <view class='container'>
+        <view class='student'>我是学生</view>
+        <view class='teacher'>我是老师</view>
+    </view>
+</view>
